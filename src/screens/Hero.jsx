@@ -80,7 +80,4 @@ const styles = {
     fontSize: 20,
     marginRight: 15,
   },
-  buttonIcon: {
-
-  }
 }

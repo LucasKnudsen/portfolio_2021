@@ -5,7 +5,7 @@ import WorkCard from '../shared/WorkCard'
 
 const MyWork = () => {
   const [myWork, setMyWork] = useState([])
-  const [update, setUpdate] = useState()
+  const [update] = useState()
 
   useEffect(() => {
     axios.get('portfolio_info.json').then(res => setMyWork(res.data))

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { portfolioHoverVariants } from '../styles/animations'
 
 const WorkCard = ({ project }) => {
   const [hover, setHover] = useState(false)

@@ -17,7 +17,7 @@ export const heroFadeInVariants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 1.5,
+      duration: 2.5,
       ease: [0.43, 0.13, 0.23, 0.96],
       staggerChildren: 0.25,
       when: 'beforeChildren',
