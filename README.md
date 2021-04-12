@@ -1,4 +1,6 @@
-## About
-- Summery (Fizzy creativity & bold functionality)
-- Languages
-- 
+# My Portfolio
+
+## Written with:
+- React
+- Semantic UI
+- Framer Motion
