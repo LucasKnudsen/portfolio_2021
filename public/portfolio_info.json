@@ -7,17 +7,17 @@
     "url": ""
   },
   {
-    "backgroundColor": "rgba(127,155,212 ,0.5 )",
-    "backgroundImage": "url(/images/iggys.jpg)",
+    "backgroundColor": "rgba(127,165,212 ,0.5 )",
+    "backgroundImage": "url(/images/3d.jpg)",
     "title": "2D to 3D Rendering",
-    "content": "Online niche store providing clothes for Italian Greyhounds",
+    "content": "Uses a 3D modelling API to create body measurements from a 2D image",
     "url": ""
   },
   {
-    "backgroundColor": "rgba(127,225,112 ,0.5 )",
-    "backgroundImage": "url(/images/iggys.jpg)",
-    "title": "Friends of Iggy",
-    "content": "Online niche store providing clothes for Italian Greyhounds",
+    "backgroundColor": "rgba(100,65,162 ,0.5 )",
+    "backgroundImage": "url(/images/orion.jpg)",
+    "title": "Orion Zolution",
+    "content": "Stock Picker service that predicts market movements based on volatility",
     "url": ""
   },
   {
