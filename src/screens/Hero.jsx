@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { heroButtonVariants, heroFadeInVariants } from '../styles/animations'
+import { heroButtonVariants, heroContentFadeInVariants, heroFadeInVariants } from '../styles/animations'
+import { bubbles } from '../modules/helperFunctions'
 import profilePicture from '../assets/profile.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -12,25 +13,28 @@ const Hero = (props) => {
     <motion.div style={styles.heroContainer}
       variants={heroFadeInVariants} initial='initial' animate='animate'
     >
+      <div>
+        {bubbles(-200)}
+        {bubbles(200)}
+      </div>
       <motion.img src={profilePicture} alt="me!" style={styles.heroImage}
-        initial='initial' animate='animate'
+         initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 1.5}}}
       />
-
       <motion.div style={styles.heroText}
-        initial='initial' animate='animate'
+        variants={heroContentFadeInVariants}
       >
         Hi there! My name is <span style={{ color: 'aquamarine' }}>Lucas Knudsen.</span>
       </motion.div>
       <motion.div style={styles.heroText}
-        initial='initial' animate='animate'
+        variants={heroContentFadeInVariants}
       >
         I'm a full-stack software craftsman.
       </motion.div>
-      <AnchorLink href="#about" style={{ textDecoration: 'none' }}>
+      <AnchorLink href="#about" style={{ textDecoration: 'none', background: 'transparent' }}>
         <motion.div style={styles.heroButton}
           variants={heroButtonVariants}
-          initial='initial' animate='animate'
           whileHover='hover'
+          initial='initial' animate='animate'
         >
           <div style={styles.buttonText}>
             Wanna learn more?
@@ -64,8 +68,8 @@ const styles = {
   heroImage: {
     marginBottom: 45,
     borderRadius: '50%',
-    height: '30vh',
-    width: '30vh'
+    width: '15%',
+    zIndex: 1
   },
   heroButton: {
     display: 'flex',

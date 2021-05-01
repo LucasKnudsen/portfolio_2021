@@ -1,4 +1,16 @@
 export const heroButtonVariants = {
+  initial: {
+    opacity: 0,
+    y: 50
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1.5,
+      duration: 2,
+    }
+  },
   hover: {
     backgroundColor: 'aquamarine',
     color: 'rgb(22, 33, 41)',
@@ -6,22 +18,32 @@ export const heroButtonVariants = {
     transition: {
       duration: 0.8,
       ease: [0.43, 0.13, 0.23, 0.96]
-    },
+    }
   }
 }
 
 export const heroFadeInVariants = {
+  animate: {
+    transition: {
+      duration: 1,
+      staggerChildren: 0.4,
+      when: "beforeChildren"
+    },
+  }
+}
+
+export const heroContentFadeInVariants = {
   initial: {
-    opacity: 0
+    opacity: 0,
+    y: 50
   },
   animate: {
     opacity: 1,
+    y: 0,
     transition: {
-      duration: 2.5,
-      ease: [0.43, 0.13, 0.23, 0.96],
-      staggerChildren: 0.25,
-      when: 'beforeChildren',
-    },
+      duration: 1.5,
+
+    }
   }
 }
 
@@ -129,9 +151,9 @@ export const arrowVariants = {
 
 export const fullStackVariants = {
   hover: {
-    scale: 1.05,
+    scale: 1.1,
     transition: {
-      duration: 0.4
+      duration: 0.6
     }
   }
 }
