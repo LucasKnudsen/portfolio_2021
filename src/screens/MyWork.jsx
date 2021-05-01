@@ -35,11 +35,10 @@ export default MyWork
 
 const styles = {
   myWorkContainer: {
-    margin: '120px 0',
-    padding: '0 25px',
+    marginTop: 120,
+    padding: '0 25px 50px 25px',
     backgroundColor: 'rgb(22, 33, 41)',
-    borderTopLeftRadius: 500,
-    borderTopRightRadius: 500,
+
   },
   title: {
     fontSize: 40,

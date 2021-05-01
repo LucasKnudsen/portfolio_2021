@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const WorkCard = ({ project }) => {
   const [hover, setHover] = useState(false)
-  const { backgroundColor, backgroundImage, title, content } = project
+  const { backgroundColor, backgroundImage, title, content, url, madeWith } = project
 
   const styles = {
     cardContainer: {
@@ -17,8 +17,7 @@ const WorkCard = ({ project }) => {
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      marginBottom: 25
-
+      marginBottom: 25,
     },
     titleContainer: {
       borderRadius: 10,
@@ -48,6 +47,7 @@ const WorkCard = ({ project }) => {
       color: 'white',
       fontSize: '1vw',
       background: "#141c3a",
+      padding: 15
 
     },
     title: {
@@ -75,6 +75,7 @@ const WorkCard = ({ project }) => {
             <motion.div style={styles.button} whileHover={{ color: '#333', background: 'aquamarine', transition: { duration: 0.2 } }}>
               Visit project
             </motion.div>
+            <p style={{position: 'absolute', top: '85%', fontSize: 12}}>Made with: {madeWith}</p>
           </motion.div>
         ) : (
             <motion.div style={styles.titleContainer} initial={false}
